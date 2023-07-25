@@ -1,6 +1,6 @@
 window.addEventListener("load", function() {
     const container = document.getElementById("container");
-    this.fetch("https://handlers.education.launchcode.org/static/astronauts.json").then( function(response) {
+    fetch("https://handlers.education.launchcode.org/static/astronauts.json").then( function(response) {
         response.json().then( function(json) {
             console.log(json);
             for (let i = 0; i < json.length; i++) {
